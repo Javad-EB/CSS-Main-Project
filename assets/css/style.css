@@ -1,0 +1,195 @@
+:root {
+    --dark-background: #1F2937;
+    --gray-standard: #E5E7EB;
+    --white-standard: #FFFFFF;
+    --blue-btn: #3882F6;
+    --title-color: #F9FAF8;
+    --link-red: #ac0000;
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(/assets/font/Roboto-Regular.ttf) format('truetype');
+} 
+
+@font-face {
+    font-family: 'RobotoBolder';
+    src: url(/assets/font/Roboto-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(/assets/font/Roboto-LightItalic.ttf) format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: 'RobotoRegular', sans-serif;
+}
+section {
+    display: block;
+}
+.header {
+    background-color: var(--dark-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 98.8%;
+}
+nav {
+    text-align: center;
+}
+.navi-bar {
+    list-style-type: none;
+    color: var(--gray-standard);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-logo {
+    width: 30vh;
+}
+a.navi-link {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--gray-standard);
+}
+a.navi-link:hover {
+    color: var(--link-red);
+    border-bottom: 0.2em solid var(--link-red);
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+.main-text {
+    background-color: var(--dark-background);
+    padding: 6em 15em;
+    display: flex;
+    align-items: center;
+}
+.title-maintext {
+    font-size: 48px;
+    color: var(--title-color);
+    font-family: 'RobotoBolder', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.text-maintext {
+    color: var(--gray-standard);
+    font-size: 18px;
+    margin: 0;
+}
+.main-img {
+    width: 30vw;
+    height: 40vh;
+    box-shadow: 4px 4px 4px 4px #000000;
+    margin: 0 20px;
+}
+.btn-signup {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--gray-standard);
+    background-color: var(--blue-btn);
+    text-align: center;
+    margin-top: 1em;
+    padding: 0.5em 2.0em;
+    border-radius: 0.3em;
+    font-family: 'RobotoBolder', sans-serif;
+    font-weight: bolder;
+    border: 2px solid var(--white-standard);
+}
+.info {
+    margin: 3em 0 3em 0;
+    padding: 0 12em 0 12em;
+}
+.info-text {
+    text-align: center;
+    display: block;
+    font-size: 36px;
+    color: var(--dark-background);
+    font-family: 'RobotoBolder', sans-serif;
+    font-weight: 800;
+}
+.info-fig {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+figure {
+    text-align: center;
+}
+.fig {
+    width: 200px;
+    border-radius: 0.5em;
+    border: 0.2em solid var(--blue-btn);
+}
+.fig:hover {
+    opacity: 0.5;
+    width: 360px;
+    transition: 800ms;
+}
+.quote {
+    background-color: var(--gray-standard);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5em 15em;;
+    margin: 0;
+}
+blockquote {
+    color: var(--dark-background);
+    font-size: 36px;
+    display: block;
+    text-align: left;
+    font-family: 'RobotoLight', sans-serif;
+    font-style: italic;
+    padding: 0%;
+    margin: 0;
+}
+.quote p {
+    font-size: 18px;
+    color: var(--dark-background);
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.sign-form {
+    display: flex;
+    justify-content:space-around;
+    background-color: var(--blue-btn);
+    margin: 5em 15em 5em 15em;
+    padding: 2em 0;
+    border-radius: 10px;
+    color: var(--white-standard);
+    align-items: center;
+}
+
+.sign-form p {
+    font-size: 18px;
+}
+.sign-title {
+    font-weight: bold;
+}
+.sign-text {
+    color: var(--gray-standard);
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--dark-background);
+    color: var(--gray-standard);
+}
